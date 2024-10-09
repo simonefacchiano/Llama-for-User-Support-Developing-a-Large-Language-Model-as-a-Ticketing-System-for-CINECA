@@ -13,4 +13,5 @@ In collaboration with **CINECA**, one of the most important technology research 
   <img src="leonardo.jpg" alt="Leonardo Supercomputer" width="500"/>
 </div>  
 
+
 The structure of this thesis is therefore as follows. The first chapter will introduce Large Language Models and the Open-Source policy that allowed their democratization, and then introduce CINECA in more detail and better formalize the scope of this work. The second chapter will provide a more technical overview of the Transformers and Llama architecture. The third chapter will then discuss *fine-tuning*, and present the results of the model built with CINECA. Similarly, the fourth and fifth chapters will deal with *RAG* and *quantization*, and then show the results obtained in these areas.
