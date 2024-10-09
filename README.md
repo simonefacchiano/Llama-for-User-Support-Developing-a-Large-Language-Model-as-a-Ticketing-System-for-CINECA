@@ -10,7 +10,7 @@ Given their scale, these large models initially remained confined within the wal
 In collaboration with **CINECA**, one of the most important technology research centers in Italy and Europe, this thesis aims to study in detail the functioning of Large Language Models in the field of Customer Support. Specifically, the goal of this work is to develop a system that can be used by the company for its own purposes in the continuous interaction with its customers of HPC systems, taking advantage of the release of Llama 3, the latest language model made by Meta. The work was made possible by the access provided by CINECA to the incredible computational resources of the **Leonardo** supercomputer, one of the best supercomputers in the world.
 
 <div align="center">
-  <img src="leonardo.jpg" alt="Leonardo Supercomputer" width="500"/>
+  <img src="leonardo.jpg" alt="Leonardo Supercomputer" width="480"/>
 </div>  
 
 
