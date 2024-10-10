@@ -1,3 +1,6 @@
+# This is the script that quantize the model, creates the folder to store the quantized model,
+# and performs some basic experiments in terms of Perplexity, Memory, Generation Time...
+
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 import pandas as pd
