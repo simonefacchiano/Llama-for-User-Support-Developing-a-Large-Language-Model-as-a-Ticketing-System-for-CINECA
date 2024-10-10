@@ -1,6 +1,6 @@
-# Questo è il nuovo e funzionante script per fare RAG.
-# Usa questo per i tuoi esperimenti. Rispetto a RAG.py,
-# qui carico direttamente l'indice completo con tutti i documenti.
+# This is the main script to do RAG.
+# Use thif for the experiments. Rather than RAG.py,
+# here we laod the entire index with all the documents.
 
 import os
 import pickle

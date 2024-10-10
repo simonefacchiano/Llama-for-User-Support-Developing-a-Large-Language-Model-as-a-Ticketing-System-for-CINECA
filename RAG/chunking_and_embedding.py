@@ -1,3 +1,5 @@
+# In this file, we take the "raw" files, we chunk them, and we save them as txt in the folder "chunks"
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
 import os

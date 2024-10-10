@@ -1,5 +1,4 @@
-# Questo è il vecchio file RAG, usa RAG2 per i tuoi esperimenti.
-
+# We create the index and all the other things that were necessary for RAG.
 
 
 import os
@@ -64,36 +63,3 @@ with open(CHUNKS_PATH, "wb") as f:
     pickle.dump(docs_after_split, f)
 
 print('Tutto ok')
-
-# hf = HuggingFacePipeline.from_model_id(
-#     model_id = LLAMA_MODEL,
-#     device = 0,
-#     task = "text-generation",
-#     pipeline_kwargs = {"temperature": 0.95, "max_new_tokens": 300}
-# )
-
-# prompt_template = """**********\n Use the following pieces of context to answer the question at the end.
-
-# {context}
-
-# Question: {question}
-
-# Helpful Answer:
-# """
-
-# PROMPT = PromptTemplate(
-#  template=prompt_template, input_variables=["context", "question"]
-# )
-
-# retrievalQA = RetrievalQA.from_chain_type(
-#     llm=hf,
-#     chain_type="stuff",
-#     retriever=retriever,
-#     return_source_documents=True,
-#     chain_type_kwargs={"prompt": PROMPT}
-# )
-
-# question = """How many GPUs does Leonardo's compute nodes host?"""
-# result = retrievalQA.invoke({"query": question})
-# print(result['result'])
-
