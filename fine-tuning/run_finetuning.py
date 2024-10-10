@@ -1,5 +1,6 @@
 # This script performs fine-tuning of a pre-trained LLM model (Llama3-8b-Instruct).
-# It loads and formats a dataset of conversation templates, tokenizes the data, and prepares it for training.
+# It loads and formats a dataset of conversation templates, tokenizes the data,
+# and prepares it for training.
 
 import os
 import pandas as pd

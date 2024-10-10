@@ -1,4 +1,6 @@
-# Questo file serve a pulire il dataset creato per il finetuning
+# Questo file serve a pulire il dataset creato per il finetuning.
+# Non è il modo più elegante per farlo, ma dopo svariati tentativi si è rivelato l'unico modo 
+# per includere il maggior numero di situazioni possibili.
 
 import re
 import json
