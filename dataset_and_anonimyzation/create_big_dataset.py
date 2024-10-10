@@ -1,5 +1,8 @@
 # Questo file si pone l'obiettivo di organizzare meglio il file "parse_simone.py"
 # Organizza meglio il codice, e prova a renderlo più efficace.
+# Inoltre, crea il grande dataset contenente tutti i meta-dati.
+
+
 html_content = '''
 
 '''
