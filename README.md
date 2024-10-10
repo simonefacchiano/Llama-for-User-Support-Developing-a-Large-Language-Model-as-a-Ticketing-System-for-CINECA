@@ -18,14 +18,14 @@ The structure of this thesis is therefore as follows. The first chapter will int
 
 # Use the code
 
-Le prossime righe forniscono delle brevi istruzioni per navigare nella repository. Spero che questo codice possa essere utile a chiunque voglia sperimentare con Llama 3 per la costruzione di un chatbot personalizzato.
+The next few lines provide brief instructions for navigating the repository. I hope this code will be useful to anyone who wants to experiment with Llama 3 for building a custom chatbot.
 
-Nella cartella `download_models` si trovano i due file che abbiamo utilizzato per scaricare Llama 3, e gli altri modelli (ad esempio quello di embedding utilizzato in RAG). Richiede di definire la chiave d'accesso di HF come variabile d'ambiente.
+The `download_models` folder contains the two files we used to download Llama 3, and the other models (e.g., the embedding model used in RAG). It requires defining the HF access key as an environment variable.
 
-Nella cartella `dataset_and_anonymization` sono contenuti i file utilizzati per fare il parsing delle email e per anonimizzarle. Questo era necessario ai fini del fine-tuning.
+The `dataset_and_anonymization` folder contains the files used to do email parsing and anonymization. This was necessary for the purpose of fine-tuning.
 
-Nella cartella fine-tuning, sono quindi presenti gli script per fare fine-tuning di Llama 3 su un dataset di multi-turn conversations.
+Thus, in the fine-tuning folder are the scripts for doing fine-tuning of Llama 3 on a dataset of multi-turn conversations.
 
-Nella cartella `RAG` sono presenti i file per far funzionare RAG. Idem per la cartella `quantization`.
+In the `RAG` folder are the files to run RAG. Ditto for the `quantization` folder.
 
-Infine nella cartella experiments sono riportati i codici per performare gli esperimenti, i cui risultati sono riportati nella tesi.
+Finally, in the experiments folder are the codes to perform the experiments, the results of which are reported in the thesis.
