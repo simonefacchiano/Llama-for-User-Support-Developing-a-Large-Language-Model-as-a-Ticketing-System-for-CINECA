@@ -1,3 +1,9 @@
+# siccome il fine-tuning che abbiamo fatto è “speciale”, serve che ogni ticket
+# abbia la struttura system-user-assistant. In generale, non vanno bene i ticket 
+# nei quali l’user risponde due volte di file, stessa cosa assistant. Il file
+#  check_alternanza.py garantisce che questo sia vero, e sovrascrive i dati “alternati” 
+# a quelli precedenti.
+
 import json
 
 # Percorso del file JSON

@@ -1,6 +1,5 @@
-print('Running the script')
-
-# Librerie
+# In this file, you should mainly focus on the function "consistent_anonymization". This was used to
+# anonymize the data for the fine-tuning procedure.
 
 import os
 import re
