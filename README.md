@@ -15,3 +15,17 @@ In collaboration with **CINECA**, one of the most important technology research 
 
 
 The structure of this thesis is therefore as follows. The first chapter will introduce Large Language Models and the Open-Source policy that allowed their democratization, and then introduce CINECA in more detail and better formalize the scope of this work. The second chapter will provide a more technical overview of the Transformers and Llama architecture. The third chapter will then discuss *fine-tuning*, and present the results of the model built with CINECA. Similarly, the fourth and fifth chapters will deal with *RAG* and *quantization*, and then show the results obtained in these areas.
+
+# Use the code
+
+Le prossime righe forniscono delle brevi istruzioni per navigare nella repository. Spero che questo codice possa essere utile a chiunque voglia sperimentare con Llama 3 per la costruzione di un chatbot personalizzato.
+
+Nella cartella `download_models` si trovano i due file che abbiamo utilizzato per scaricare Llama 3, e gli altri modelli (ad esempio quello di embedding utilizzato in RAG). Richiede di definire la chiave d'accesso di HF come variabile d'ambiente.
+
+Nella cartella `dataset_and_anonymization` sono contenuti i file utilizzati per fare il parsing delle email e per anonimizzarle. Questo era necessario ai fini del fine-tuning.
+
+Nella cartella fine-tuning, sono quindi presenti gli script per fare fine-tuning di Llama 3 su un dataset di multi-turn conversations.
+
+Nella cartella `RAG` sono presenti i file per far funzionare RAG. Idem per la cartella `quantization`.
+
+Infine nella cartella experiments sono riportati i codici per performare gli esperimenti, i cui risultati sono riportati nella tesi.
