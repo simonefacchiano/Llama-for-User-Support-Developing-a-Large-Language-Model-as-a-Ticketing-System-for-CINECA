@@ -26,6 +26,6 @@ The `dataset_and_anonymization` folder contains the files used to do email parsi
 
 Thus, in the fine-tuning folder are the scripts for doing fine-tuning of Llama 3 on a dataset of multi-turn conversations.
 
-In the `RAG` folder are the files to run RAG. Ditto for the `quantization` folder.
+In the `RAG` folder are the files to run RAG. Same for the `quantization` folder.
 
 Finally, in the experiments folder are the codes to perform the experiments, the results of which are reported in the thesis.
