@@ -20,6 +20,8 @@ The structure of this thesis is therefore as follows. The first chapter will int
 
 The next few lines provide brief instructions for navigating the repository. I hope this code will be useful to anyone who wants to experiment with Llama 3 for building a custom chatbot.
 
+First of all, you can install the dependencies by doing `pip install -r requirements.txt`
+
 The `download_models` folder contains the two files we used to download Llama 3, and the other models (e.g., the embedding model used in RAG). It requires defining the HF access key as an environment variable.
 
 The `dataset_and_anonymization` folder contains the files used to do email parsing and anonymization. This was necessary for the purpose of fine-tuning.
