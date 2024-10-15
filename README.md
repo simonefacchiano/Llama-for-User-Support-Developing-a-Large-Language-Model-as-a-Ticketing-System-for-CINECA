@@ -32,7 +32,7 @@ Thus, in the `fine-tuning` folder are the scripts for doing fine-tuning of Llama
 _______
 
 
-In the `RAG` folder are the files to run RAG. You create the database using `html_to_txt.py` (after you downloaded all the files you need in HTML). Then, you operate chunking and embeddings using `RAG.py`, and finally run `RAG2.py` to query your model.
+In the `RAG` folder are the files to run RAG. You create the database using `download_database_RAG.ipynb`and then `html_to_txt.py` (after you downloaded all the files you need in HTML). After this, you operate chunking and embeddings using `RAG.py`, and finally run `RAG2.py` to query your model.
 _______
 
 The `quantization` folder is very straightforward as well. If you want to quantize the base model, run `quantization.py`. If, on the other hand, you want to quantize the fine-tuned version, run `quantize_finetuning.py`.
