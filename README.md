@@ -38,4 +38,4 @@ _______
 The `quantization` folder is very straightforward as well. If you want to quantize the base model, run `quantization.py`. If, on the other hand, you want to quantize the fine-tuned version, run `quantize_finetuning.py`.
 _______
 
-Finally, in the experiments folder are the codes to perform the experiments, the results of which are reported in the thesis.
+Finally, in the `experiments` folder are the codes to perform the experiments, the results of which are reported in the thesis.
