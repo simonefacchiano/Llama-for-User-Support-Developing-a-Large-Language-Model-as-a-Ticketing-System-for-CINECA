@@ -32,6 +32,8 @@ Thus, in the `fine-tuning` folder are the scripts for doing fine-tuning of Llama
 _______
 
 
-In the `RAG` folder are the files to run RAG. Same for the `quantization` folder.
+In the `RAG` folder are the files to run RAG. You create the database using `html_to_txt.py` (after you downloaded all the files you need in HTML). Then, you operate chunking and embeddings using `RAG.py`, and finally run `RAG2.py` to query your model.
+
+Same for the `quantization` folder.
 
 Finally, in the experiments folder are the codes to perform the experiments, the results of which are reported in the thesis.
