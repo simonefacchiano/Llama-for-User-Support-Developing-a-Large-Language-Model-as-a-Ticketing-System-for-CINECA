@@ -1,0 +1,101 @@
+Question,Answer
+Qual è il principale sistema HPC di livello Tier-0 attualmente ospitato da CINECA?,LEONARDO
+In quale città italiana si trova il supercomputer LEONARDO?,Bologna
+Qual è il primo step per entrare nei cluster HPC di CINECA?,Ottenere uno username nel database e una password
+A cosa serve il comando $HOME sui sistemi HPC di CINECA?,Memorizzare programmi e risultati piccoli e leggeri
+"Se ho problemi o domande, quale è l'indirizzo di riferimento dell'Help Desk di CINECA?",superc@cineca.it
+Con quale comando tengo d'occhio il budget delle ore sull'HPC CINECA?,saldo -b
+Quali app posso usare per il 2FA in CINECA?,"FreeOTP, Google Authenticator o altre app per generare codici di autentificazione"
+Come funziona l'accesso vis SSH su CINECA?,"Con uno dei seguenti comandi: ssh <username>@login.marconi.cineca.it, ssh <username>@login.g100.cineca.it, ssh <username>@login.leonardo.cineca.it"
+Posso definire una password che ha meno di 10 caratteri per creare un account nell'HPC di CINECA?,"No, le nuove password devono avere almeno 10 caratteri"
+Per quanti mesi ha validità la mia password creata per l'HPC di CINECA?,3 mesi
+Ho terminato il mio budget. Per quanto tempo sarà tenuto in vita il mio user name su CINECA?,Per un intero anno
+"In Leonardo, una GPU viene trattata come quanti core in termini di contabilità?",8
+"Dopo la fine del progetto, per quanto tempo i miei file vengono conservati dentro $WORK sull'HPC CINECA?",Fino a 6 mesi
+"Per conservare dati critici e non grandi che voglio essere certo di preservare sull'HPC di CINECA, conviene usare $HOME o $WORK?",$HOME
+Quale comando uso per avere una lista di moduli disponibili sull'HPC di CINECA?,Il comando module
+Come controllo se un modulo è disponibile su spack nell'HPC di CINECA?,spack list <package_name>
+Quale è il modulo Python principale di cineca-ai?,deeplrn
+C'è un limite di tempo per i comandi nei login node sull'HPC di CINECA?,10 minuti
+Con quale comando di SLURM posso fare il submit di un job sull'HPC di CINECA?,"sbatch, srun, salloc"
+Come vedo la lista dei job in coda su SLURM sull'HPC di CINECA?,squeue
+Come mi iscrivo alla mailing list HPC-news di CINECA?,Mandando una mail dall'indirizzo che vuoi iscrivere
+Quanti nodi sono disponibilii in GALILEO100 di CINECA?,8260 nodi Intel CascadeLake
+Cosa faccio se ho finito il budget ma il mio progetto è ancora attivo sull'HPC di CINECA?,Scrivi all'indirizzo superc@cineca.it motivando la tua richiesta
+Come cambio la mia password sull'HPC di CINECA?,"Cliccando su ""Password dimenticata"" o cliccando sul tasto di ""Update"" nella sezione della tua Sicurezza Account"
+"Che significa che alcune aree di storage sono permanenti, sull'HPC di CINECA?","Significa che i dati non sono mai cancellati, o cancellati mesi dopo la fine del progetto"
+Cosa è l'ambiente $FAST sull'HPC di CINECA?,"È un'area per il lavoro collaborativo all'interno di un progetto, che conserva i file per 6 mesi dopo la fine del progetto, e specifica di Leonardo"
+Come sottometto un interactive job sull'HPC di CINECA?,> salloc --nodes=<nodes_no> --ntasks-per-node=<tasks_no> --account=<account_no> --partition=<partition_name>
+Quale parametro del file sbatch regola il walltime di un job sull'HPC di CINECA?,--time
+Come si ottengono le risorse HPC sui sistemi HPC di CINECA?,"Tramite progetti ISCRA, progetti EuroHPC, accordi con istituzioni di ricerca italiane, o con applicazioni generali di utenti o industrie"
+Quali sono i cluster disponibili per CINECA?,"Galileo100, Marconi e Leonardo"
+Qual è la procedura per connettersi al cluster CINECA?,"Usare il comando step nel terminale, e poi connettersi col comando > ssh <username>@login.<cluster>.cineca.it"
+Per cosa sta 'SLURM'?,Simple Linux Utility for Resource Management
+Quale comando locale si usa per vedere l'utilizzo di spazio sul disco sull'HPC di CINECA?,Con il comando locale cindata
+Chi è il Presidente di CINECA?,Francesco Ubertini
+Chi è il Direttore Generale di CINECA?,Alessandra Poggiani
+In che anno è stato costituito CINECA?,1969
+Da quanti anni CINECA porta avanti la sua attività?,Quasi 50 anni
+È obbligatorio utilizzare l'accesso 2FA sull'HPC di CINECA?,L'accesso 2FA è obbligatorio per Leonardo e Marconi da Giugno 2023
+Come carico il modulo cineca-ai?,module load profile/deeplrn --> module load autoload cineca-ai/<version> --> enjoy the environment
+Posso utilizzare il ftp (file transfer protocol) su CINECA?,"No, non è permesso per ragioni di sicurezza"
+Come sposto dei dati tra due server?,scp -r *.bin myusername@remote.host:/my_directory/.
+Come viene calcolato il costo di un batch job nel sistema di billing aziendale sull'HPC di CINECA?,In base all'elapsed time (tempo trascorso) e al numero di core riservati
+Come cambio gli attributi di un job già sottomesso sull'HPC di CINECA?,scontrol update
+Quali sono i login nodes disponibili su Leonardo?,"login01-ext.leonardo.cineca.it, login02-ext.leonardo.cineca.it, login05-ext.leonardo.cineca.it, login07-ext.leonardo.cineca.it"
+"La mia nuova password non viene accettata sull'HPC di CINECA, perché?",La password che hai scelto non rispetta le nostre politiche delle password
+Come controllo tutti i miei job attualmente in coda sull'HPC di CINECA?,squeue -u $USER
+Leonardo è presente nella lista Top500?,"Sì, al 6 posto"
+Qual è la policy di backup su $HOME sull'HPC di CINECA?,Il backup è previsto su base giornaliera
+Dove posso memorizzare i miei risultati se sono pesanti sull'HPC di CINECA?,$DRES
+Che significa lo stato 'PD' nella coda del job sull'HPC di CINECA?,Pending
+"Se un treno viaggia a 60 km/h, quanto tempo impiega per percorrere 180 km?",3 ore
+"Qual è il numero successivo nella serie: 2, 4, 8, 16, ...?",32
+"Se ho 3 mele e ne prendo 2, quante mele ho?",2 mele
+Quanto fa la metà di due terzi?,Un terzo
+"In un gruppo di 30 persone, 12 sono donne. Quanti sono gli uomini?",18 uomini
+In una stanza ci sono 5 persone. Ognuna stringe la mano a tutte le altre una sola volta. Quante strette di mano ci sono in totale?,10 strette di mano
+Un contadino ha 17 pecore e tutte tranne 9 scappano. Quante pecore rimangono?,9 pecore
+"Un albero cresce di 25 cm ogni anno. Quanto sarà alto dopo 4 anni, se oggi è alto 1 metro?",2 metri
+"La madre di Marco ha tre figli: Luca, Matteo e ...?",Marco
+Due padri e due figli entrano in un negozio e comprano tre cappelli. Ognuno ne riceve uno. Come è possibile?,"Sono un nonno, un padre (il nonno è anche padre) e un figlio"
+Immagina che stai correndo in una gara e superi la persona al secondo posto. In che posizione ti trovi ora?,Secondo posto
+ROMA sta ad AMOR come 6324 sta a...?,4236
+"Quale dei seguenti scarteresti? Cavallo, Mucca, Gatto, Canguro, Cinghiale",Canguro
+"Un ragazzo ha 4 anni e sua sorella è tre volte più grande. Quando lui avrà 12 anni, quanti anni avrà la sorella?",20 anni
+Giorgio è sia il 50esimo più alto che il 50esimo più basso della sua scuola. Quanti alunni ha la sua scuola?,99
+"Quale è il numero mancante nella serie: 1, 6, 3, 18, 9, ..., 27",54
+"Se un albero cade in una foresta e nessuno è lì per sentirlo, fa rumore?",Dipende dalla tua prospettiva filosofica
+Cosa puoi mantenere solo dopo averlo dato a qualcun altro?,La tua parola
+Quanto pesa una tonnellata di piume rispetto a una tonnellata di mattoni?,Hanno lo stesso peso
+In un cassetto ci sono 10 paia di calzini neri e 10 paia di calzini bianchi. Qual è il numero minimo di calzini da estrarre affinché si abbia almeno un paio dello stesso colore?,3 calzini
+"Se hai 12 uova e rompi 3 di esse, quanti gruppi di 3 uova puoi ancora formare?",3 gruppi
+Una stanza ha 4 angoli. Ogni angolo contiene un gatto e ogni gatto vede altri 3 gatti. Quanti gatti ci sono in totale?,4 gatti
+È tuo ma viene usato più dagli altri. Cos'è?,Il tuo nome
+"Lui ne ha 2, un cittadino ne ha 4 e un umano ne ha 3. Che cosa sono?",Le vocali
+Più persone mi custodiscono e meno sono al sicuro. Che cosa sono?,Un segreto
+Quanti erano i piccoli indiani di Agatha Christie?,10 piccolo indiani
+Qual è la capitale dell'Australia?,Canberra
+Qual è la capitale del Canada?,Ottawa
+Quante corde ha una chitarra elettrica?,6 corde
+A quale città appartiene il Chelsea Football Club?,Londra
+Qual è il titolo del primo film Disney?,Biancaneve
+Quante strisce ci sono sulla bandiera americana?,13
+Quanti giorni ci vogliono affinché la Terra orbiti attorno al Sole?,365
+"Fino al 1923, come si chiamava la città turca di Istanbul?",Costantinopoli
+Qual è il paese più piccolo del mondo?,Città del Vaticano
+Chi ha scritto Harry Potter?,J. K. Rowling
+L’artista norvegese Edvard Munch è famoso per aver dipinto quale pezzo iconico?,L'urlo
+Dove si trova la Sagrada Familia?,Barcellona
+Qual è l'oceano più grande del mondo?,Oceano Pacifico
+Qual è il paese più popolato della Terra?,Cina
+Quante ossa ci sono nel corpo umano?,206
+Quante valvole ha il cuore umano?,4
+Come si chiama il processo attraverso il quale le piante si nutrono?,Fotosintesi
+Quanti elementi ci sono nella tavola periodica? (Risposta): 118 elementi.,118
+Chi ha dipinto Guernica?,Pablo Picasso
+Chi ha diretto Inception?,Christopher Nolan
+Chi ha scritto Amleto?,William Shakespeare
+Quale squadra ha vinto più Mondiali di calcio?,Brasile
+Chi era il cantante dei Queen?,Freddie Mercury
+Quante corde ha un violino?,4

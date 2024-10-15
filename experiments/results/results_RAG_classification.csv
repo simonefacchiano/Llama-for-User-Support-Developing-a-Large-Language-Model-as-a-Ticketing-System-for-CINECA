@@ -1,0 +1,101 @@
+Question|Answer|Model_Answer
+What is the main Tier-0 HPC system currently hosted by CINECA?|LEONARDO|Grazie Loredana, Simona, Alessio e Luigi per le istruzioni, la guida e la pazienza. La main Tier-0 HPC system al momento è il cluster Galileo. Può contare sui nodi che escono per le applicazioni scientifiche che utilizzano GPU. La nostra consuetuadine è utilizzare il modulo nvhpc per attivare la versione di Volta della GPU. La modifica del file di configurazione del modulo è il secondo passaggio. Quando sei dentro una home, puoi caricare il modulo nvhpc con il comando > module load profile/candidate nvhpc/2020.5_knl module load autoload nvhpc/2020.5_knl/none module unload profile/candidate nvhpc/2020.5_knl module load profile/candidate nvhpc/2020.5_knl module unload autoload nvhpc/2020.5
+In which Italian city is the LEONARDO supercomputer located?|Bologna|
+What is the first step to access CINECA's HPC clusters?|Obtain a username in the database and a password|
+What is the purpose of the $HOME command on CINECA's HPC systems?|Store small and light programs and results|
+If I have problems or questions, what is the reference address for CINECA's Help Desk?|superc@cineca.it|
+Which command allows me to monitor the budget of hours on CINECA's HPC?|saldo -b|
+Which apps can I use for 2FA in CINECA?|FreeOTP, Google Authenticator, or other apps to generate authentication codes|
+How does SSH access work at CINECA?|With one of the following commands: ssh <username>@login.marconi.cineca.it, ssh <username>@login.g100.cineca.it, ssh <username>@login.leonardo.cineca.it|
+Can I define a password with fewer than 10 characters to create an account on CINECA's HPC?|No, new passwords must be at least 10 characters long|
+For how many months is my password valid after it is created for CINECA's HPC?|3 months|
+I have exhausted my budget. How long will my username remain active on CINECA?|For an entire year|
+In Leonardo, how many cores is a GPU treated as in terms of accounting?|8|
+After the end of a project, how long are my files retained in $WORK on CINECA's HPC?|Up to 6 months|
+To store critical and small data that I want to be sure to preserve on CINECA's HPC, should I use $HOME or $WORK?|$HOME|
+Which command do I use to get a list of available modules on CINECA's HPC?|The module command|
+How do I check if a module is available on spack in CINECA's HPC?|spack list <package_name>|
+What is the main Python module of cineca-ai?|deeplrn|
+Is there a time limit for commands on the login nodes on CINECA's HPC?|10 minutes|
+Which SLURM command do I use to submit a job on CINECA's HPC?|sbatch, srun, salloc|
+How do I see the list of jobs in the SLURM queue on CINECA's HPC?|squeue|
+How do I subscribe to the HPC-news mailing list at CINECA?|Send an email from the address you want to subscribe|
+How many nodes are available in CINECA's GALILEO100?|8260 Intel CascadeLake nodes|
+What should I do if I run out of budget but my project is still active on CINECA's HPC?|Write to superc@cineca.it explaining your request|
+How do I change my password on CINECA's HPC?|By clicking on 'Forgot Password' or clicking the 'Update' button in the Security section of your Account|
+What does it mean that some storage areas are permanent on CINECA's HPC?|It means that the data is never deleted, or it is deleted months after the end of the project|
+What is the $FAST environment on CINECA's HPC?|It is an area for collaborative work within a project, which retains files for 6 months after the end of the project, and it is specific to Leonardo|
+How do I submit an interactive job on CINECA's HPC?|> salloc --nodes=<nodes_no> --ntasks-per-node=<tasks_no> --account=<account_no> --partition=<partition_name>|
+Which sbatch file parameter controls the walltime of a job on CINECA's HPC?|--time|
+How are HPC resources allocated on CINECA's HPC systems?|Through ISCRA projects, EuroHPC projects, agreements with Italian research institutions, or general applications from users or industries|
+What are the available clusters at CINECA?|Galileo100, Marconi, and Leonardo|
+What is the procedure to connect to CINECA's cluster?|Use the step command in the terminal, and then connect with the command > ssh <username>@login.<cluster>.cineca.it|
+What does 'SLURM' stand for?|Simple Linux Utility for Resource Management|
+Which local command is used to check disk space usage on CINECA's HPC?|With the local command cindata|
+Who is the President of CINECA?|Francesco Ubertini|
+Who is the General Director of CINECA?|Alessandra Poggiani|
+In which year was CINECA founded?|1969|
+How many years has CINECA been operating?|Almost 50 years|
+Is it mandatory to use 2FA on CINECA's HPC?|2FA access is mandatory for Leonardo and Marconi starting from June 2023|
+How do I load the cineca-ai module?|module load profile/deeplrn --> module load autoload cineca-ai/<version> --> enjoy the environment|
+Can I use FTP (File Transfer Protocol) on CINECA?|No, it is not allowed for security reasons|
+How do I transfer data between two servers?|scp -r *.bin myusername@remote.host:/my_directory/.|
+How is the cost of a batch job calculated in the corporate billing system on CINECA's HPC?|Based on the elapsed time and the number of reserved cores|
+How do I change the attributes of an already submitted job on CINECA's HPC?|scontrol update|
+What are the available login nodes on Leonardo?|login01-ext.leonardo.cineca.it, login02-ext.leonardo.cineca.it, login05-ext.leonardo.cineca.it, login07-ext.leonardo.cineca.it|
+My new password is not being accepted on CINECA's HPC, why?|The password you chose does not comply with our password policies|
+How do I check all my currently queued jobs on CINECA's HPC?|squeue -u $USER|
+Is Leonardo listed in the Top500?|Yes, ranked 6th|
+What is the backup policy on $HOME on CINECA's HPC?|Backup is performed on a daily basis|
+Where can I store my results if they are large on CINECA's HPC?|$DRES|
+What does the 'PD' state mean in the job queue on CINECA's HPC?|Pending|
+If a train travels at 60 km/h, how long does it take to cover 180 km?|3 hours|
+What is the next number in the series: 2, 4, 8, 16, ...?|32|
+If I have 3 apples and take 2, how many apples do I have?|2 apples|
+What is half of two-thirds?|One third|
+In a group of 30 people, 12 are women. How many are men?|18 men|
+In a room, there are 5 people. Each shakes hands with every other person once. How many handshakes are there in total?|10 handshakes|
+A farmer has 17 sheep, and all but 9 run away. How many sheep are left?|9 sheep|
+A tree grows 25 cm every year. How tall will it be after 4 years, if today it is 1 meter tall?|2 meters|
+Marco's mother has three children: Luca, Matteo, and ...?|Marco|
+Two fathers and two sons walk into a store and buy three hats. Each one receives one. How is that possible?|There are a grandfather, a father (the grandfather is also a father), and a son|
+Imagine you are running a race and you pass the person in second place. What position are you in now?|Second place|
+ROMA is to AMOR as 6324 is to...?|4236|
+Which of the following would you discard? Horse, Cow, Cat, Kangaroo, Wild Boar|Kangaroo|
+A boy is 4 years old, and his sister is three times as old. When he is 12 years old, how old will his sister be?|20 years|
+Giorgio is both the 50th tallest and the 50th shortest student in his school. How many students are there in his school?|99|
+What is the missing number in the series: 1, 6, 3, 18, 9, ..., 27?|54|
+If a tree falls in a forest and no one is around to hear it, does it make a sound?|It depends on your philosophical perspective|
+What can you keep only after giving it to someone else?|Your word|
+How much does a ton of feathers weigh compared to a ton of bricks?|They weigh the same|
+In a drawer, there are 10 pairs of black socks and 10 pairs of white socks. What is the minimum number of socks you need to pull out to ensure you have at least one matching pair?|3 socks|
+If you have 12 eggs and break 3 of them, how many groups of 3 eggs can you still form?|3 groups|
+A room has 4 corners. Each corner has a cat, and each cat sees 3 other cats. How many cats are there in total?|4 cats|
+It’s yours, but other people use it more than you do. What is it?|Your name|
+He has 1, a citizen has 3, and a human has 2. What are they?|Vowels|
+The more people guard me, the less safe I am. What am I?|A secret|
+How many little Indians were there in Agatha Christie’s novel?|10 Little Indians|
+What is the capital of Australia?|Canberra|
+What is the capital of Canada?|Ottawa|
+How many strings does an electric guitar have?|6 strings|
+Which city is the Chelsea Football Club based in?|London|
+What is the title of the first Disney movie?|Snow White|
+How many stripes are there on the American flag?|13|
+How many days does it take for the Earth to orbit the Sun?|365|
+Until 1923, what was the Turkish city of Istanbul called?|Constantinople|
+What is the smallest country in the world?|Vatican City|
+Who wrote Harry Potter?|J.K. Rowling|
+The Norwegian artist Edvard Munch is famous for painting which iconic piece?|The Scream|
+Where is the Sagrada Familia located?|Barcelona|
+What is the largest ocean in the world?|Pacific Ocean|
+What is the most populated country on Earth?|China|
+How many bones are in the human body?|206|
+How many valves does the human heart have?|4|
+What is the name of the process by which plants feed themselves?|Photosynthesis|
+How many elements are there in the periodic table?|118|
+Who painted Guernica?|Pablo Picasso|
+Who directed Inception?|Christopher Nolan|
+Who wrote Hamlet?|William Shakespeare|
+Which team has won the most FIFA World Cups?|Brazil|
+Who was the lead singer of Queen?|Freddie Mercury|
+How many strings does a violin have?|4|
