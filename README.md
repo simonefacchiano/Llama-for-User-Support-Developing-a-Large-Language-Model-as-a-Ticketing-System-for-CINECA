@@ -25,7 +25,7 @@ First of all, you can install the dependencies by doing `pip install -r requirem
 The `download_models` folder contains the two files we used to download Llama 3, and the other models (e.g., the embedding model used in RAG). It requires defining the HF access key as an environment variable.
 
 The `dataset_and_anonymization` folder contains the files used to do email parsing and anonymization. This was necessary for the purpose of fine-tuning. The file `anonymize_data.py` contains the function `consistent_anonymization` which was used to hide sensitive information. This function was used in the file `parser_finale.py` to create a first version of the dataset, and also in the file `create_big_dataset.py` for the creation of the big json containing all the metadata. In addition, the file `check_alternanza.py` was useful to fix the structure of the dataset used during the fine-tuning procedure, and `compute_statistics.py` is simply used to obtain some additional info about the metadata.
----
+_______
 
 Thus, in the fine-tuning folder are the scripts for doing fine-tuning of Llama 3 on a dataset of multi-turn conversations.
 
